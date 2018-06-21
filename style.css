@@ -1,3 +1,45 @@
+@font-face{
+	src: './fonts/AvenirNext/AvenirNextCyr-Regular.ttf';
+	font-family: AvenirNext;
+	font-weight: 400;
+}
+
+@font-face{
+	src: './fonts/OpenSans/OpenSans-Bold.ttf';
+	font-family: OpenSans;
+	font-weight: 700;
+}
+
+@font-face{
+	src: './fonts/OpenSans/OpenSans-Regular.ttf';
+	font-family: OpenSans;
+	font-weight: 400;
+}
+
+@font-face{
+	src: './fonts/OpenSans/OpenSans-Light.ttf';
+	font-family: OpenSans;
+	font-weight: 100;
+}
+
+@font-face{
+	src: './fonts/Montserrat/Montserrat-Regular.ttf';
+	font-family: Montserrat;
+	font-weight: 400;
+}
+
+@font-face{
+	src: './fonts/ProximaNova/ProximaNova-Semibold/ProximaNova-Semibold.ttf';
+	font-family: ProximaNova;
+	font-weight: 600;
+}
+
+@font-face{
+	src: './fonts/ProximaNova/ProximaNova-Reg.otf';
+	font-family: ProximaNova;
+	font-weight: 400;
+}
+
 .header{
 	background-image: url('./images/background.jpg');
 	height: 500px;
@@ -31,15 +73,20 @@
 .title{
 	color: #ffffff;
 	font-size: 40px;
+	font-family: AvenirNext, SansSerif;
+	font-weight: 400;
 	text-transform: uppercase;	
 	margin-top: 300px;
 	margin-left: 60px;
 	margin-bottom: 0px;
+	
 }
 
 .subtitle{
 	color: #ffffff; 
 	font-size:15px;
+	font-family: OpenSans, SansSerif;
+	font-weight: 700;
 	text-transform: uppercase;
 	margin-left: 150px;
 	margin-top: 0px;
@@ -64,14 +111,20 @@
 	color: #ffffff;
 	font-size: 14px;
 	text-decoration: none;
+	font-family: ProximaNova, SansSerif;
+	font-weight: 400px;
 }
 
 .benefits_title{
 	font-size: 24px;
+	font-family: OpenSans, SansSerif;
+	font-weight: 400px;
 }
 
 .benefits_text{
 	font-size: 14px;
+	font-family: ProximaNova, SansSerif;
+	font-weight: 400px;
 }
 
 .about{
@@ -85,13 +138,17 @@
 
 .about_subtitle{
 	font-size: 14px;
+	font-family: Montserrat, SansSerif;
+	font-weight: 400px;
 	color: #FD634E;
 	text-transform: uppercase;
 	margin-bottom: 0px;
 }
 
 .about_title{
-	font-size: 30px;
+	font-size: 35px;
+	font-family: OpenSans, SansSerif;
+	font-weight: 100px;
 	color: #a2ca28;
 	text-transform: uppercase;
 	margin-bottom: 0px;
@@ -100,11 +157,15 @@
 
 .about_text{
 	font-size: 14px;
+	font-family: OpenSans, SansSerif;
+	font-weight: 400px;
 }
 
 .read_more{
 	color: #a2ca28;
 	font-size: 14px;
+	font-family: OpenSans, SansSerif;
+	font-weight: 400px;
 }
 
 .icon{
@@ -114,10 +175,178 @@
 .about_image{
 	width: 500px;
 	height: 250px;
+	position: relative;
+}
+
+.about_image:before{
+	content: '';
+	display: block;
+	background: rgba(0, 0, 0, 0.5);
+	width: 500px;
+	height: 250px;
+}
+
+.image_with_text{
+	position: relative;
+}
+
+.text_hover{
+	position: absolute;
+	top: 100px;
+	left: 150px;
 }
 
 .info{
 	padding-left: 30px;
 	padding-right: 30px;
 }
-	
+
+.footer{
+	background: #0d1119;
+	display: flex;
+	justify-content: space-between;
+}
+
+.placeholder1{
+	font-size:14px;
+	font-family: ProximaNova, SansSerif;
+	font-weight: 400;
+	color: #83969f;
+	text-transform: capitalize;
+	border: none;
+	border-radius: 2px;
+	width: 130px;
+	height: 40px;
+	padding-left: 10px;
+}
+
+.placeholder2{
+	font-size:14px;
+	font-family: ProximaNova, SansSerif;
+	font-weight: 400;
+	color: #83969f;
+	text-transform: capitalize;
+	border: none;
+	border-radius: 2px;
+	width: 190px;
+	height: 40px;
+	padding-left: 10px;
+}
+
+.button{
+	font-size: 15px;
+	font-family: ProximaNova, SansSerif;
+	font-weight: 600;
+	color: #ffffff;
+	background: #a2ca28;
+	text-transform: capitalize;
+	border: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	border-radius: 2px;
+	width: 130px;
+	height: 40px;
+}
+
+.contacts{
+	display: flex;
+	justify-content: space-between;
+	width: 750px;
+	position: relative;
+	top: 10px;
+	left: 200px;
+}
+
+.social{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.facebook{
+	background: #2e3192;
+	width: 50px;
+	height: 50px;  
+	display: block;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 10px;
+}
+
+.facebook:before{
+	content: '';
+	background-image: url('https://www.uspca.com/wp-content/uploads/facebook-logo-png-white-i6.png');
+	background-size: 20px 20px;
+	width: 20px;
+	height: 20px;
+	display: block;
+	position: absolute;
+	top: 13px;
+	left: 13px;
+}
+
+.twitter{
+	background: #00aeef;
+	width: 50px;
+	height: 50px;  
+	display: block;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 10px;
+}
+
+.twitter:before{
+	content: '';
+	background-image: url('http://backgroundcheckall.com/wp-content/uploads/2017/12/white-twitter-logo-transparent-background-8.png');
+	background-size: 20px 20px;
+	width: 20px;
+	height: 20px;
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+
+.youtube{
+	background: #ed3123;
+	width: 50px;
+	height: 50px;  
+	display: block;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 10px;
+}
+
+.youtube:before{
+	content: '';
+	background-image: url('https://www.ptc.com/-/media/Social-Logos/yt_icon_mono_dark.png');
+	background-size: 20px 20px;
+	width: 20px;
+	height: 20px;
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+
+.linkedin{
+	background: #171a8f;
+	width: 50px;
+	height: 50px;  
+	display: block;
+	border-radius: 50%;
+	position: relative;
+}
+
+.linkedin:before{
+	content: '';
+	background-image: url('http://hdfcrealty.com/public/img/linkedin.png');
+	background-size: 20px 20px;
+	width: 20px;
+	height: 20px;
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}

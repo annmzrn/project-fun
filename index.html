@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Fitness in a can</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="normalize" href="normalize.css">
 </head>
 <body>
 	<header class="header">
@@ -59,10 +60,22 @@
 				<p class="about_text">Text</p>
 				<a href="#" class="read_more">Read more</a>
 			</div>
+			<div class="image_with_text">
 			<img src="./images/img1.jpg" class="about_image">
+			<div class="text_hover">
+				<h3 class="about_title">Fitness first</h3>
+				<h4 class="about_subtitle">It's all about</h4>
+			</div>
+			</div>
 		</section>
 		<section class="about">
+			<div class="image_with_text">
 			<img src="./images/img2.jpg" class="about_image">
+			<div class="text_hover">
+				<h4 class="about_subtitle">Love your</h4>
+				<h3 class="about_title">Your body</h3>
+			</div>
+			</div>
 			<div class="info">
 				<h4 class="about_subtitle">Love your</h4>
 				<h3 class="about_title">Your body</h3>
@@ -72,18 +85,18 @@
 			</div>
 		</section>
 	</main>
-	<footer>
-		<div>
+	<footer class="footer">
+		<div class="contacts">
 		<form action="URL">
-			<input type="placeholder" name="Your name">
-			<input type="placeholder" name="Your Email">
-			<button>Join newsletter</button>
+			<input type="placeholder" placeholder="Your Name" class="placeholder1">
+			<input type="placeholder" placeholder="Your Email" class="placeholder2">
+			<button class="button">Join newsletter</button>
 		</form>
-		<ul>
-			<li><a href="#"><img src="./images/fb.svg"></a></li>
-			<li><a href="#"><img src="./images/tw.svg"></a></li>
-			<li><a href="#"><img src="./images/yt.svg"></a></li>
-			<li><a href="#"><img src="./images/ln.svg"></a></li>
+		<ul class="social">
+			<li><a href="#" class="facebook"></a></li>
+			<li><a href="#" class="twitter"></a></li>
+			<li><a href="#" class="youtube"></a></li>
+			<li><a href="#" class="linkedin"></a></li>
 		</ul>
 		</div>
 	</footer>
