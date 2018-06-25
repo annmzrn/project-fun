@@ -40,6 +40,12 @@
 	font-weight: 400;
 }
 
+@font-face{
+	src: './fonts/MyriadPro-Regular.ttf';
+	font-family: MyriadPro;
+	font-weight: 400;
+}
+
 .header{
 	background-image: url('./images/background.jpg');
 	height: 500px;
@@ -51,6 +57,8 @@
 .link{
 	color: #ffffff;
 	font-size: 13px;
+	font-family: MyriadPro, sans-serif;
+	font-weight: 400;
 	text-transform: uppercase;
 	text-decoration: none;
 }
@@ -73,7 +81,7 @@
 .title{
 	color: #ffffff;
 	font-size: 40px;
-	font-family: AvenirNext, SansSerif;
+	font-family: AvenirNext, sans-serif;
 	font-weight: 400;
 	text-transform: uppercase;	
 	margin-top: 300px;
@@ -85,7 +93,7 @@
 .subtitle{
 	color: #ffffff; 
 	font-size:15px;
-	font-family: OpenSans, SansSerif;
+	font-family: OpenSans, sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-left: 150px;
@@ -111,20 +119,20 @@
 	color: #ffffff;
 	font-size: 14px;
 	text-decoration: none;
-	font-family: ProximaNova, SansSerif;
-	font-weight: 400px;
+	font-family: ProximaNova, sans-serif;
+	font-weight: 400;
 }
 
 .benefits_title{
 	font-size: 24px;
-	font-family: OpenSans, SansSerif;
-	font-weight: 400px;
+	font-family: OpenSans, sans-serif;
+	font-weight: 400;
 }
 
 .benefits_text{
 	font-size: 14px;
-	font-family: ProximaNova, SansSerif;
-	font-weight: 400px;
+	font-family: ProximaNova, sans-serif;
+	font-weight: 400;
 }
 
 .about{
@@ -138,17 +146,17 @@
 
 .about_subtitle{
 	font-size: 14px;
-	font-family: Montserrat, SansSerif;
-	font-weight: 400px;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
 	color: #FD634E;
 	text-transform: uppercase;
 	margin-bottom: 0px;
 }
 
 .about_title{
-	font-size: 35px;
-	font-family: OpenSans, SansSerif;
-	font-weight: 100px;
+	font-size: 35px; 
+	font-family: OpenSans, sans-serif;
+	font-weight: 100;
 	color: #a2ca28;
 	text-transform: uppercase;
 	margin-bottom: 0px;
@@ -157,28 +165,31 @@
 
 .about_text{
 	font-size: 14px;
-	font-family: OpenSans, SansSerif;
-	font-weight: 400px;
+	font-family: OpenSans, sans-serif;
+	font-weight: 400;
 }
 
 .read_more{
 	color: #a2ca28;
 	font-size: 14px;
-	font-family: OpenSans, SansSerif;
-	font-weight: 400px;
+	font-family: OpenSans, sans-serif;
+	font-weight: 400;
 }
 
 .icon{
 	width: 15px;
 }
 
-.about_image{
+.image_with_text_1{
+	background-image: url("./images/img1.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: relative;
 	width: 500px;
 	height: 250px;
-	position: relative;
 }
 
-.about_image:before{
+.image_with_text_1:before{
 	content: '';
 	display: block;
 	background: rgba(0, 0, 0, 0.5);
@@ -186,8 +197,21 @@
 	height: 250px;
 }
 
-.image_with_text{
+.image_with_text_2{
+	background-image: url("./images/img2.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
 	position: relative;
+	width: 500px;
+	height: 250px;
+}
+
+.image_with_text_2:before{
+	content: '';
+	display: block;
+	background: rgba(0, 0, 0, 0.5);
+	width: 500px;
+	height: 250px;
 }
 
 .text_hover{
@@ -209,7 +233,7 @@
 
 .placeholder1{
 	font-size:14px;
-	font-family: ProximaNova, SansSerif;
+	font-family: ProximaNova, sans-serif;
 	font-weight: 400;
 	color: #83969f;
 	text-transform: capitalize;
@@ -222,7 +246,7 @@
 
 .placeholder2{
 	font-size:14px;
-	font-family: ProximaNova, SansSerif;
+	font-family: ProximaNova, sans-serif;
 	font-weight: 400;
 	color: #83969f;
 	text-transform: capitalize;
@@ -235,7 +259,7 @@
 
 .button{
 	font-size: 15px;
-	font-family: ProximaNova, SansSerif;
+	font-family: ProximaNova, sans-serif;
 	font-weight: 600;
 	color: #ffffff;
 	background: #a2ca28;
@@ -276,7 +300,7 @@
 
 .facebook:before{
 	content: '';
-	background-image: url('https://www.uspca.com/wp-content/uploads/facebook-logo-png-white-i6.png');
+	background-image: url('./images/fb.svg');
 	background-size: 20px 20px;
 	width: 20px;
 	height: 20px;
@@ -298,7 +322,7 @@
 
 .twitter:before{
 	content: '';
-	background-image: url('http://backgroundcheckall.com/wp-content/uploads/2017/12/white-twitter-logo-transparent-background-8.png');
+	background-image: url('./images/tw.svg');
 	background-size: 20px 20px;
 	width: 20px;
 	height: 20px;
@@ -320,7 +344,7 @@
 
 .youtube:before{
 	content: '';
-	background-image: url('https://www.ptc.com/-/media/Social-Logos/yt_icon_mono_dark.png');
+	background-image: url('./images/yt.svg');
 	background-size: 20px 20px;
 	width: 20px;
 	height: 20px;
@@ -341,7 +365,7 @@
 
 .linkedin:before{
 	content: '';
-	background-image: url('http://hdfcrealty.com/public/img/linkedin.png');
+	background-image: url('./images/ln.svg');
 	background-size: 20px 20px;
 	width: 20px;
 	height: 20px;
