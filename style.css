@@ -119,6 +119,10 @@
 	background: #a2ca28;
 }
 
+.block{
+	width: 187.5px;
+}
+
 .explore_more{
 	color: #ffffff;
 	font-size: 14px;
@@ -296,6 +300,7 @@
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
+	margin-top: 0px;
 }
 
 .social_icon{
