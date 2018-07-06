@@ -54,7 +54,7 @@
 	background-color: #FD634E;
 	}
 	100%{
-	background-color: #0d1119;
+	background-color: #00aeef;
 	}
 }
 
@@ -71,7 +71,8 @@
 
 .header{
 	background-image: url('./images/background.jpg');
-	height: 500px;
+	width: 1604px;
+	height: 895px;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -89,10 +90,10 @@
 .menu{
 	display: flex;
 	justify-content: space-between;
-	width: 553px;
+	width: 505px;
 	list-style: none;
-	margin-top: 36px;
-    margin-right: 57px;
+	margin-top: 39px;
+    margin-right: 52px;
 }
 
 .container{
@@ -109,8 +110,8 @@
 	font-family: AvenirNext, sans-serif;
 	font-weight: 400;
 	text-transform: uppercase;	
-	margin-top: 200px;
-	margin-left: 114px;
+	margin-top: 591px;
+	margin-left: 115px;
 	margin-bottom: 0px;
 	
 }
@@ -121,7 +122,7 @@
 	font-family: OpenSans, sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
-	margin-left: 227px;
+	margin-left: 280px;
 	margin-top: 4px;
 }
 
@@ -130,10 +131,15 @@
 	justify-content: space-between;
 	list-style: none;
 	color: #ffffff;
-	width: 750px;
+	width: 1180px;
 	margin: 0 auto;
 	padding-top: 110px;
-	padding-bottom: 195px;
+	padding-bottom: 199px;
+	padding-left: 0px;
+}
+
+.benefits-img{
+	height: 43px;
 }
 
 .main{
@@ -141,7 +147,8 @@
 }
 
 .block{
-	width: 187.5px;
+	width: 210px;
+    padding-right: 67px;
 }
 
 .explore_more{
@@ -168,9 +175,9 @@
 .about{
 	display: flex;
 	justify-content: space-between;
-	width: 750px;
+	width: 1180px;
 	margin: 0 auto;
-	background: #ffffff;
+	background: #a2ca28;
 	text-align: center;
 }
 
@@ -182,7 +189,6 @@
 	text-transform: uppercase;
 	margin: 0;
 	text-align: center;
-	padding-top: 30px;
 }
 
 .about_title{
@@ -193,12 +199,14 @@
 	text-transform: uppercase;
 	margin: 0;
 	text-align: center;
+	padding-top: 5px;
 }
 
 .about_text{
 	font-size: 14px;
 	font-family: OpenSans, sans-serif;
 	font-weight: 400;
+	padding-top: 7px;
 }
 
 .read_more{
@@ -210,17 +218,17 @@
 
 .icon{
 	width: 15px;
+	padding-top: 15px;
 }
 
 .image_with_text{
 	position: relative;
-	width: 500px;
-	height: 250px;
+	width: 779px;
+	height: 394px;
 }
 
 .image_with_text_1{
 	background-image: url("./images/img1.jpg");
-	background-size: contain;
 	background-repeat: no-repeat;
 }
 
@@ -228,8 +236,8 @@
 	content: '';
 	display: block;
 	background: rgba(0, 0, 0, 0.5);
-	width: 500px;
-	height: 250px;
+	width: 779px;
+	height: 394px;
 	opacity: 0; 
 	transition: all 2s;
 }
@@ -237,16 +245,17 @@
 .image_with_text_2{
 	background-image: url("./images/img2.jpg");
 	background-repeat: no-repeat;
-	background-size: contain;
 }
 
 .text_hover{
 	position: absolute;
-	top: 100px;
-	left: 150px;
+	margin: 0 auto;
 	opacity: 0;
 	transition: all 2s;
 	text-align: center;
+	width: 100%;
+    top: 50%;
+    margin-top: -20px;
 }
 
 .image_with_text:hover .text_hover{
@@ -258,14 +267,19 @@
 }
 
 .info{
+	width: 401px;
 	padding-left: 30px;
 	padding-right: 30px;
+	background: #ffffff;
+	padding-top: 53px;
 }
 
 .footer{
 	background: #0d1119;
 	display: flex;
 	justify-content: space-between;
+	width: 1604px;
+	height: 200px;
 }
 
 .placeholder1{
@@ -276,28 +290,26 @@
 	text-transform: capitalize;
 	border: none;
 	border-radius: 2px;
-	width: 130px;
-	height: 45px;
+	width: 190px;
 	padding-left: 10px;
+	height: 48px;
 }
 
 .placeholder2{
 	font-size:14px;
 	font-family: ProximaNova, sans-serif;
-	font-weight: 400;
 	color: #83969f;
 	text-transform: capitalize;
 	border: none;
 	border-radius: 2px;
-	width: 150px;
-	height: 45px;
+	width: 334px;
 	padding-left: 10px;
+	height: 48px;
 }
 
 .button{
 	font-size: 15px;
 	font-family: ProximaNova, sans-serif;
-	font-weight: 600;
 	color: #ffffff;
 	background: #a2ca28;
 	text-transform: capitalize;
@@ -306,8 +318,8 @@
 	padding-bottom: 10px;
 	padding-left: 10px;
 	border-radius: 2px;
-	width: 130px;
-	height: 45px;
+	width: 180px;
+	height: 50px;
 }
 
 .button:hover{
@@ -317,18 +329,23 @@
 .contacts{
 	display: flex;
 	justify-content: space-between;
-	width: 750px;
+	width: 1180px;
 	margin: 0 auto;
 	position: relative;
 	text-align: center;
-	padding-top: 70px;
+
+}
+
+.form{
+	padding-top: 69px;
+	padding-left: 58px;
 }
 
 .social{
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
-	margin-top: 0px;
+	margin-top: 63px;
 }
 
 .social_icon{
@@ -337,7 +354,7 @@
 	display: block;
 	border-radius: 50%;
 	position: relative;
-	margin-right: 10px;
+	margin-left: 15px;
 }
 
 .facebook{
@@ -385,4 +402,9 @@
 .linkedin:before{
 	content: '';
 	background-image: url('./images/ln.svg');
+}
+
+.section{
+	width: 1604px;
+	background: #a2ca28;
 }
