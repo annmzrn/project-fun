@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Fitness in a can</title>
+	<link rel="normalize" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="body">
 	<header class="header">
 		<div class="container">
 		<img src="./images/logo.png">	
@@ -59,10 +60,20 @@
 				<p class="about_text">Text</p>
 				<a href="#" class="read_more">Read more</a>
 			</div>
-			<img src="./images/img1.jpg" class="about_image">
+			<div class="image_with_text image_with_text_1">
+			<div class="text_hover">
+				<h3 class="about_title">Fitness first</h3>
+				<h4 class="about_subtitle">It's all about</h4>
+			</div>
+			</div>
 		</section>
 		<section class="about">
-			<img src="./images/img2.jpg" class="about_image">
+			<div class="image_with_text image_with_text_2">
+			<div class="text_hover">
+				<h4 class="about_subtitle">Love your</h4>
+				<h3 class="about_title">Your body</h3>
+			</div>
+			</div>
 			<div class="info">
 				<h4 class="about_subtitle">Love your</h4>
 				<h3 class="about_title">Your body</h3>
@@ -70,20 +81,20 @@
 				<p class="about_text">Text</p>
 				<a href="#" class="read_more">Read more</a>
 			</div>
-		</section>
+		</section>	
 	</main>
-	<footer>
-		<div>
+	<footer class="footer">
+		<div class="contacts">
 		<form action="URL">
-			<input type="placeholder" name="Your name">
-			<input type="placeholder" name="Your Email">
-			<button>Join newsletter</button>
+			<input type="placeholder" placeholder="Your Name" class="placeholder1">
+			<input type="placeholder" placeholder="Your Email" class="placeholder2">
+			<button class="button">Join newsletter</button>
 		</form>
-		<ul>
-			<li><a href="#"><img src="./images/fb.svg"></a></li>
-			<li><a href="#"><img src="./images/tw.svg"></a></li>
-			<li><a href="#"><img src="./images/yt.svg"></a></li>
-			<li><a href="#"><img src="./images/ln.svg"></a></li>
+		<ul class="social">
+			<li><a href="#" class="social_icon facebook"></a></li>
+			<li><a href="#" class="social_icon twitter"></a></li>
+			<li><a href="#" class="social_icon youtube"></a></li>
+			<li><a href="#" class="social_icon linkedin"></a></li>
 		</ul>
 		</div>
 	</footer>
