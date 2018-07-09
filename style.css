@@ -71,7 +71,6 @@
 
 .header{
 	background-image: url('./images/background.jpg');
-	width: 1604px;
 	height: 895px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -278,7 +277,6 @@
 	background: #0d1119;
 	display: flex;
 	justify-content: space-between;
-	width: 1604px;
 	height: 200px;
 }
 
@@ -314,7 +312,7 @@
 	background: #a2ca28;
 	text-transform: capitalize;
 	border: none;
-	padding-top: 10px;
+	padding-top: 7px;
 	padding-bottom: 10px;
 	padding-left: 10px;
 	border-radius: 2px;
@@ -407,4 +405,5 @@
 .section{
 	width: 1604px;
 	background: #a2ca28;
+	margin: 0 auto;
 }
